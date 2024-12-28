@@ -1,2 +1,17 @@
-<h2>hello world</h2>
-<router-outlet />
+<div class="ui container">
+    <div class="ui pointing menu">
+        <a class="item" routerLink="/collections" routerLinkActive="active">collections</a>
+        <a class="item " routerLink="/elements" routerLinkActive="active">elements</a>
+        <div class="right menu">
+            <div class="item">
+                <div class="ui transparent icon input">
+                    <input type="text" placeholder="Search...">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui segment">
+        <router-outlet />
+    </div>
+</div>
