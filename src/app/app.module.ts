@@ -7,6 +7,7 @@ import { ElementsModule } from './elements/elements.module';
 import { CollectionsModule } from './collections/collections.module';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { PlaceHolderComponent } from './elements/place-holder/place-holder.component';
 
 @NgModule({
   declarations: [
@@ -16,8 +17,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
   ],
   imports: [
     BrowserModule,
-    ElementsModule,
-    CollectionsModule,
+    //ElementsModule,
+    //CollectionsModule,
     AppRoutingModule,
   ],
   providers: [
