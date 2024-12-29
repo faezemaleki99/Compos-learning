@@ -7,13 +7,15 @@ import { PlaceHolderComponent } from './place-holder/place-holder.component';
 import { RepeatTemplateDirective } from './repeat-template.directive';
 import { DividerComponent } from '../shared/divider/divider.component';
 import { SharedModule } from '../shared/shared.module';
+import { SegmentComponent } from './segment/segment.component';
 
 
 @NgModule({
   declarations: [
     ElementsHomeComponent,
     PlaceHolderComponent,
-    RepeatTemplateDirective
+    RepeatTemplateDirective,
+    SegmentComponent
   ],
   imports: [
     CommonModule,
