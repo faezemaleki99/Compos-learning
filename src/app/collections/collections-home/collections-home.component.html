@@ -1,2 +1,25 @@
 <app-divider>Table</app-divider>
-<app-table [data]="data"  [headers]="headers"></app-table>
+<app-table [data]="data" [headers]="headers"></app-table>
+<app-divider>Tab</app-divider>
+This is an stretched grid column. This segment will always match the tab height
+<div class="ui grid">
+    <div class="four wide column">
+        <div class="ui vertical fluid tabular menu">
+            <a routerLink="" class="active item" routerLinkActive="active">
+                Bio
+            </a>
+            <a routerLink="companies" class="item" routerLinkActive="active">
+                Companies
+            </a>
+            <a routerLink="partners" class="item" routerLinkActive="active">
+                Partners
+            </a>
+        </div>
+    </div>
+    <div class="twelve wide stretched column">
+        <div class="ui segment">
+            This is an stretched grid column. This segment will always match the tab height
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>
