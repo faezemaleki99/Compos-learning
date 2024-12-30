@@ -5,13 +5,13 @@ This is an stretched grid column. This segment will always match the tab height
 <div class="ui grid">
     <div class="four wide column">
         <div class="ui vertical fluid tabular menu">
-            <a routerLink="" class="active item" routerLinkActive="active">
+            <a routerLink="./" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" class="item">
                 Bio
             </a>
-            <a routerLink="companies" class="item" routerLinkActive="active">
+            <a routerLink="companies" routerLinkActive="active" class="item">
                 Companies
             </a>
-            <a routerLink="partners" class="item" routerLinkActive="active">
+            <a routerLink="partners" routerLinkActive="active" class="item">
                 Partners
             </a>
         </div>
