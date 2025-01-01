@@ -8,4 +8,14 @@ import { Component, Input } from '@angular/core';
 export class AccordionComponent {
 
   @Input() items: any[] | undefined = []
+
+  itemIndex = 0
+
+  onChangeItem(index: number){
+    if(index === this.itemIndex){
+      this.itemIndex = -1
+    }else{
+      this.itemIndex = index
+    }
+  }
 }
