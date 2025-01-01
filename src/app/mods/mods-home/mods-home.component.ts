@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class ModsHomeComponent {
 
+  isShowModal: boolean = false
+  
+  onChangeModal() {
+    this.isShowModal = !this.isShowModal
+  }
+
 }

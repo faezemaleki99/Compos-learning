@@ -1,1 +1,5 @@
-<app-modal></app-modal>
+<app-divider>
+    Modal
+</app-divider>
+<button class="ui green button" (click)="onChangeModal()">Show Modal</button>
+<app-modal (close)="onChangeModal()" *ngIf="isShowModal"></app-modal>

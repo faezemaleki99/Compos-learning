@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ModsRoutingModule } from './mods-routing.module';
 import { ModalComponent } from './modal/modal.component';
 import { ModsHomeComponent } from './mods-home/mods-home.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { ModsHomeComponent } from './mods-home/mods-home.component';
   ],
   imports: [
     CommonModule,
-    ModsRoutingModule
+    ModsRoutingModule,
+    SharedModule
   ]
 })
 export class ModsModule { }
