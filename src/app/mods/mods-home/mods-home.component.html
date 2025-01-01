@@ -3,3 +3,7 @@
 </app-divider>
 <button class="ui green button" (click)="onChangeModal()">Show Modal</button>
 <app-modal (close)="onChangeModal()" *ngIf="isShowModal"></app-modal>
+<app-divider>
+    Accordion
+</app-divider>
+<app-accordion [items]="items"></app-accordion>
